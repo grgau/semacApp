@@ -4,7 +4,21 @@ angular.module('starter.controllers', [])
 
 .controller('HomeCtrl', function($scope) {})
 
-.controller('Dia1Ctrl', function($scope) {})
+.controller('Dia1Ctrl', function($scope, $http) {
+    $scope.results = "";
+    $http.get('http://date.jsontest.com/')
+    .success(function(data, status, headers,config){
+        console.log('data success');
+        console.log(data); // for browser console
+        $scope.results = data; // for UI
+    })
+    .error(function(data, status, headers,config){
+        console.log('data error');
+    })
+    .then(function(results){
+        things = results.data;
+    });
+})
 
 .controller('Dia2Ctrl', function($scope) {})
 
