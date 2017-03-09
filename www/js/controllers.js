@@ -20,13 +20,69 @@ angular.module('starter.controllers', [])
     });
 })
 
-.controller('Dia2Ctrl', function($scope) {})
+.controller('Dia2Ctrl', function($scope, $http) {
+    $scope.results = "";
+    $http.get('http://date.jsontest.com/')
+    .success(function(data, status, headers,config){
+        console.log('data success');
+        console.log(data); // for browser console
+        $scope.results = data; // for UI
+    })
+    .error(function(data, status, headers,config){
+        console.log('data error');
+    })
+    .then(function(results){
+        things = results.data;
+    });
+})
 
-.controller('Dia3Ctrl', function($scope) {})
+.controller('Dia3Ctrl', function($scope, $http) {
+    $scope.results = "";
+    $http.get('http://date.jsontest.com/')
+    .success(function(data, status, headers,config){
+        console.log('data success');
+        console.log(data); // for browser console
+        $scope.results = data; // for UI
+    })
+    .error(function(data, status, headers,config){
+        console.log('data error');
+    })
+    .then(function(results){
+        things = results.data;
+    });
+})
 
-.controller('Dia4Ctrl', function($scope) {})
+.controller('Dia4Ctrl', function($scope, $http) {
+    $scope.results = "";
+    $http.get('http://date.jsontest.com/')
+    .success(function(data, status, headers,config){
+        console.log('data success');
+        console.log(data); // for browser console
+        $scope.results = data; // for UI
+    })
+    .error(function(data, status, headers,config){
+        console.log('data error');
+    })
+    .then(function(results){
+        things = results.data;
+    });
+})
 
-.controller('Dia5Ctrl', function($scope) {})
+.controller('Dia5Ctrl', function($scope, $http) {
+    $scope.results = "";
+    $http.get('http://date.jsontest.com/')
+    .success(function(data, status, headers,config){
+        console.log('data success');
+        console.log(data); // for browser console
+        $scope.results = data; // for UI
+    })
+    .error(function(data, status, headers,config){
+        console.log('data error');
+    })
+    .then(function(results){
+        things = results.data;
+    });
+})
 
 .controller('ChatsCtrl', function($scope, Chats) {
   // With the new view caching in Ionic, Controllers are only called

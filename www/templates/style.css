@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.item {
+    background-color: #00A99F;
+    border-radius: 10px;
+    width: 98%;
+    height: 10%;
+    margin: 10px auto;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.item .header-box {
+    border-bottom: 1px solid #EEE;
+    padding-bottom: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+}
+
+.item .header-box .icon {
+    font-size: 18px;
+    color: #EEE;
+    padding-right: 5px;
+}
+
+.item .header-box .header {
+    color: #EEE;
+    font-size: 18px;
+}
+
+.item .name-box {
+    padding-top: 20px;
+    margin: 10px auto;
+    margin-top: 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+
+}
+
+.item .name-box .name {
+    color: #fff;
+    font-size: 20px;
+}
+
+.item .who-box {
+    padding-top: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+}
+
+.item .who-box .who {
+    color: #fff;
+    font-size: 16px;
+}

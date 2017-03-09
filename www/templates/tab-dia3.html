@@ -2,10 +2,32 @@
     <ion-nav-buttons side="left">
         <a class="button button-clear ion-home" style="position:absolute; left: 20px; font-size:17px; color: #5FC3AE;" href="#/tab/home">
         </a>
+
+        <link href="templates/style.css" rel="stylesheet">
+
     </ion-nav-buttons>
 
   <ion-content class="padding">
-    <h2>Dia 3</h2>
+    <!---<h2>Dia 3</h2>--->
+
+    <ion-list>
+        <ion-item class="item-text-wrap" ng-repeat="result in results">
+
+            <div class = "header-box">
+                <i class = "icon icon ion-clock"></i>
+                <p class = "header">09:00 - 10:00 </p>
+            </div>
+
+            <div class = "name-box">
+                <p class = "name"> Introducao ao Ionic <br> Ex JSON: {{results.time}}</p>
+            </div>
+
+            <div class = "who-box">
+                <p class = "who"> Prof. Gregau </p>
+            </div>
+
+        </ion-item>
+    </ion-list>
 
   </ion-content>
 </ion-view>
