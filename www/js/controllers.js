@@ -7,15 +7,15 @@ angular.module('starter.controllers', [])
 .controller('Dia1Ctrl', function($scope, $http) {
     $scope.results = "";
     $scope.doRefresh = function() {
-        $http.get('http://date.jsontest.com/')
+        $http.get('https://raw.githubusercontent.com/grgau/semac/master/semac-schedule.json')
         .success(function(data, status, headers,config){
-            $scope.results = data; // for UI
+            $scope.results = data.dia1; // for UI
         })
         .error(function(data, status, headers,config){
         console.log('data error');
         })
         .then(function(results){
-            things = results.data;
+            things = results.data.dia1;
         })
         .finally(function() {
             $scope.$broadcast('scroll.refreshComplete');
@@ -26,15 +26,15 @@ angular.module('starter.controllers', [])
 .controller('Dia2Ctrl', function($scope, $http) {
     $scope.results = "";
     $scope.doRefresh = function() {
-        $http.get('http://date.jsontest.com/')
+        $http.get('https://raw.githubusercontent.com/grgau/semac/master/semac-schedule.json')
         .success(function(data, status, headers,config){
-            $scope.results = data; // for UI
+            $scope.results = data.dia2; // for UI
         })
         .error(function(data, status, headers,config){
         console.log('data error');
         })
         .then(function(results){
-            things = results.data;
+            things = results.data.dia2;
         })
         .finally(function() {
             $scope.$broadcast('scroll.refreshComplete');
@@ -45,15 +45,15 @@ angular.module('starter.controllers', [])
 .controller('Dia3Ctrl', function($scope, $http) {
     $scope.results = "";
     $scope.doRefresh = function() {
-        $http.get('http://date.jsontest.com/')
+        $http.get('https://raw.githubusercontent.com/grgau/semac/master/semac-schedule.json')
         .success(function(data, status, headers,config){
-            $scope.results = data; // for UI
+            $scope.results = data.dia3; // for UI
         })
         .error(function(data, status, headers,config){
         console.log('data error');
         })
         .then(function(results){
-            things = results.data;
+            things = results.data.dia3;
         })
         .finally(function() {
             $scope.$broadcast('scroll.refreshComplete');
@@ -64,15 +64,15 @@ angular.module('starter.controllers', [])
 .controller('Dia4Ctrl', function($scope, $http) {
     $scope.results = "";
     $scope.doRefresh = function() {
-        $http.get('http://date.jsontest.com/')
+        $http.get('https://raw.githubusercontent.com/grgau/semac/master/semac-schedule.json')
         .success(function(data, status, headers,config){
-            $scope.results = data; // for UI
+            $scope.results = data.dia4; // for UI
         })
         .error(function(data, status, headers,config){
         console.log('data error');
         })
         .then(function(results){
-            things = results.data;
+            things = results.data.dia4;
         })
         .finally(function() {
             $scope.$broadcast('scroll.refreshComplete');
@@ -83,15 +83,15 @@ angular.module('starter.controllers', [])
 .controller('Dia5Ctrl', function($scope, $http) {
     $scope.results = "";
     $scope.doRefresh = function() {
-        $http.get('http://date.jsontest.com/')
+        $http.get('https://raw.githubusercontent.com/grgau/semac/master/semac-schedule.json')
         .success(function(data, status, headers,config){
-            $scope.results = data; // for UI
+            $scope.results = data.dia5; // for UI
         })
         .error(function(data, status, headers,config){
         console.log('data error');
         })
         .then(function(results){
-            things = results.data;
+            things = results.data.dia5;
         })
         .finally(function() {
             $scope.$broadcast('scroll.refreshComplete');

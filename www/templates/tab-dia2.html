@@ -15,18 +15,18 @@
     <ion-list>
         <ion-item class="item-text-wrap" ng-repeat="result in results">
 
-            <div class = "header-box">
-                <i class = "icon icon ion-clock"></i>
-                <p class = "header">09:00 - 10:00 </p>
-            </div>
+          <div class = "header-box">
+              <i class = "icon icon ion-clock"></i>
+              <p class = "header"> {{result.inicio}} - {{result.termino}} </p>
+          </div>
 
-            <div class = "name-box">
-                <p class = "name"> Introducao ao Ionic <br> Ex JSON: {{results.time}}</p>
-            </div>
+          <div class = "name-box">
+              <p class = "name"> {{result.nome}} </p>
+          </div>
 
-            <div class = "who-box">
-                <p class = "who"> Prof. Gregau </p>
-            </div>
+          <div class = "who-box">
+              <p class = "who"> {{result.palestrante}} </p>
+          </div>
 
         </ion-item>
     </ion-list>
