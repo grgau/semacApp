@@ -6,82 +6,97 @@ angular.module('starter.controllers', [])
 
 .controller('Dia1Ctrl', function($scope, $http) {
     $scope.results = "";
-    $http.get('http://date.jsontest.com/')
-    .success(function(data, status, headers,config){
-        console.log('data success');
-        console.log(data); // for browser console
-        $scope.results = data; // for UI
-    })
-    .error(function(data, status, headers,config){
+    $scope.doRefresh = function() {
+        $http.get('http://date.jsontest.com/')
+        .success(function(data, status, headers,config){
+            $scope.results = data; // for UI
+        })
+        .error(function(data, status, headers,config){
         console.log('data error');
-    })
-    .then(function(results){
-        things = results.data;
-    });
+        })
+        .then(function(results){
+            things = results.data;
+        })
+        .finally(function() {
+            $scope.$broadcast('scroll.refreshComplete');
+        });
+    };
 })
 
 .controller('Dia2Ctrl', function($scope, $http) {
     $scope.results = "";
-    $http.get('http://date.jsontest.com/')
-    .success(function(data, status, headers,config){
-        console.log('data success');
-        console.log(data); // for browser console
-        $scope.results = data; // for UI
-    })
-    .error(function(data, status, headers,config){
+    $scope.doRefresh = function() {
+        $http.get('http://date.jsontest.com/')
+        .success(function(data, status, headers,config){
+            $scope.results = data; // for UI
+        })
+        .error(function(data, status, headers,config){
         console.log('data error');
-    })
-    .then(function(results){
-        things = results.data;
-    });
+        })
+        .then(function(results){
+            things = results.data;
+        })
+        .finally(function() {
+            $scope.$broadcast('scroll.refreshComplete');
+        });
+    };
 })
 
 .controller('Dia3Ctrl', function($scope, $http) {
     $scope.results = "";
-    $http.get('http://date.jsontest.com/')
-    .success(function(data, status, headers,config){
-        console.log('data success');
-        console.log(data); // for browser console
-        $scope.results = data; // for UI
-    })
-    .error(function(data, status, headers,config){
+    $scope.doRefresh = function() {
+        $http.get('http://date.jsontest.com/')
+        .success(function(data, status, headers,config){
+            $scope.results = data; // for UI
+        })
+        .error(function(data, status, headers,config){
         console.log('data error');
-    })
-    .then(function(results){
-        things = results.data;
-    });
+        })
+        .then(function(results){
+            things = results.data;
+        })
+        .finally(function() {
+            $scope.$broadcast('scroll.refreshComplete');
+        });
+    };
 })
 
 .controller('Dia4Ctrl', function($scope, $http) {
     $scope.results = "";
-    $http.get('http://date.jsontest.com/')
-    .success(function(data, status, headers,config){
-        console.log('data success');
-        console.log(data); // for browser console
-        $scope.results = data; // for UI
-    })
-    .error(function(data, status, headers,config){
+    $scope.doRefresh = function() {
+        $http.get('http://date.jsontest.com/')
+        .success(function(data, status, headers,config){
+            $scope.results = data; // for UI
+        })
+        .error(function(data, status, headers,config){
         console.log('data error');
-    })
-    .then(function(results){
-        things = results.data;
-    });
+        })
+        .then(function(results){
+            things = results.data;
+        })
+        .finally(function() {
+            $scope.$broadcast('scroll.refreshComplete');
+        });
+    };
 })
 
 .controller('Dia5Ctrl', function($scope, $http) {
     $scope.results = "";
-    $http.get('http://date.jsontest.com/')
-    .success(function(data, status, headers,config){
-        console.log('data success');
-        console.log(data); // for browser console
-        $scope.results = data; // for UI
-    })
-    .error(function(data, status, headers,config){
+    $scope.doRefresh = function() {
+        $http.get('http://date.jsontest.com/')
+        .success(function(data, status, headers,config){
+            $scope.results = data; // for UI
+        })
+        .error(function(data, status, headers,config){
         console.log('data error');
-    })
-    .then(function(results){
-        things = results.data;
-    });
+        })
+        .then(function(results){
+            things = results.data;
+        })
+        .finally(function() {
+            $scope.$broadcast('scroll.refreshComplete');
+        });
+    };
 })
 
 .controller('ChatsCtrl', function($scope, Chats) {

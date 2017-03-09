@@ -7,9 +7,10 @@
 
     </ion-nav-buttons>
 
-  <ion-content class="padding">
+  <ion-content class="padding" ng-controller="Dia1Ctrl" ng-init="doRefresh()">
     <!---<h2>Dia 1</h2>--->
-
+    <ion-refresher on-refresh="doRefresh()">
+    </ion-refresher>
     <ion-list>
         <ion-item class="item-text-wrap" ng-repeat="result in results">
 
