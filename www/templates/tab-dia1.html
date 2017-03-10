@@ -13,20 +13,20 @@
     </ion-refresher>
 
     <ion-list>
-        <ion-item class="item-text-wrap" ng-repeat="result in results">
+        <ion-item class="item-text-wrap" ng-repeat="result in results" ng-click="">
+            {{result.id.nome}}
+            <div class = "header-box">
+                <i class = "icon icon ion-clock"></i>
+                <p class = "header"> {{result.inicio}} - {{result.termino}} </p>
+            </div>
 
-          <div class = "header-box">
-              <i class = "icon icon ion-clock"></i>
-              <p class = "header"> {{result.inicio}} - {{result.termino}} </p>
-          </div>
+            <div class = "name-box">
+                <p class = "name"> {{result.nome}} </p>
+            </div>
 
-          <div class = "name-box">
-              <p class = "name"> {{result.nome}} </p>
-          </div>
-
-          <div class = "who-box">
-              <p class = "who"> {{result.palestrante}} </p>
-          </div>
+            <div class = "who-box">
+                <p class = "who"> {{result.palestrante}} </p>
+            </div>
 
         </ion-item>
     </ion-list>
