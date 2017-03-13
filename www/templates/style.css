@@ -59,3 +59,62 @@
     color: #fff;
     font-size: 16px;
 }
+
+.modal {
+    background-color: #193066;
+    border-radius: 10px;
+    width: 90%;
+    height: 60%;
+    min-height: 0;
+    max-height: 450px;
+    top: 20%;
+    left: 5%;
+    right: 5%;
+    bottom: 20%;
+    opacity: 0.9 !important;
+    overflow: hidden;
+}
+
+.modal .title {
+    color: #fff;
+    font-size: 20px;
+    opacity: 0.8 !important;*/
+}
+
+.modal .photo {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    width: 60px;
+    height: 60px;
+    background: #ccc;
+    border-radius: 50%;
+    float:left;
+    padding-top: 10px;
+}
+
+.modal .name-box {
+    padding-top: 10px;
+    max-width: 70%;
+    padding-right: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    text-align:right;
+    font-size: 16px;
+    color: #fff;
+    float:right;
+    word-wrap: break-word;
+}
+
+.modal .who-box {
+    padding-top: 5px;
+    padding-right: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    color: #fff;
+    font-size: 14px;
+    float:right;
+    word-wrap: break-word;
+}
