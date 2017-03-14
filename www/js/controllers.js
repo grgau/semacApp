@@ -1,8 +1,12 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope) {})
+// .controller('DashCtrl', function($scope) {})
 
-.controller('HomeCtrl', function($scope) {})
+.controller('HomeCtrl', function($scope) {
+    $scope.doRefresh = function() {
+        $scope.$broadcast('scroll.refreshComplete');
+    };
+})
 
 .controller('Dia1Ctrl', function($scope, $http) {
     $scope.results = "";
@@ -118,8 +122,9 @@ angular.module('starter.controllers', [])
     $scope.modal.remove();
   });
 
-})
+});
 
+/*
 .controller('ChatsCtrl', function($scope, Chats) {
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
@@ -144,3 +149,4 @@ angular.module('starter.controllers', [])
     enableFriends: true
   };
 });
+*/

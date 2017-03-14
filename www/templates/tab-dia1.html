@@ -1,6 +1,6 @@
 <ion-view view-title="Segunda-feira">
     <ion-nav-buttons side="left">
-        <a class="button button-clear ion-home" style="position:absolute; left: 20px; font-size:17px; color: #5FC3AE;" href="#/tab/home">
+        <a class="button button-clear ion-home" style="position:absolute; left: 20px; font-size:18px; color: #5FC3AE;" href="#/tab/home">
         </a>
 
         <link href="templates/style.css" rel="stylesheet">
@@ -13,7 +13,7 @@
     </ion-refresher>
 
     <ion-list>
-        <ion-item class="item-text-wrap" ng-repeat="result in results" ng-controller="ModalCtrl" ng-click="openModal();" >
+        <ion-item class="item-text-wrap" ng-repeat="result in results" ng-controller="ModalCtrl" ng-click="openModal();">
             {{result.id.nome}}
             <div class = "header-box">
                 <i class = "icon icon ion-clock"></i>
