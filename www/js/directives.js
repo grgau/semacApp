@@ -1,4 +1,4 @@
-angular.module('starter')
+angular.module('starter.directives', [])
 .directive('tabsSwipable', ['$ionicGesture', function($ionicGesture){
 	//
 	// make ionTabs swipable. leftswipe -> nextTab, rightswipe -> prevTab
