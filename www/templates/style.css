@@ -78,43 +78,79 @@
 .modal .title {
     color: #fff;
     font-size: 20px;
-    opacity: 0.8 !important;*/
 }
 
-.modal .photo {
+.modal .photo img {
+    width: 80px;
+    height: 80px;
+    margin-top: 8px;
     display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
-    width: 80px;
-    height: 80px;
     background: #ccc;
     border-radius: 50%;
+    overflow: hidden;
     float:left;
-    padding-top: 10px;
 }
 
 .modal .name-box {
-    padding-top: 10px;
     max-width: 70%;
-    padding-right: 5px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 15px;
     display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
-    text-align:right;
+    text-align:justify;
     font-size: 16px;
     color: #fff;
-    float:right;
+    float:left;
     word-wrap: break-word;
 }
 
 .modal .who-box {
     padding-top: 5px;
     padding-right: 10px;
+    padding-left: 15px;
     display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
-    color: #fff;
+    text-align:justify;
     font-size: 14px;
-    float:right;
+    color: #fff;
+    float:left;
     word-wrap: break-word;
+}
+
+.modal .description-box {
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    text-align:justify;
+    font-size: 16px;
+    color: #fff;
+    float:left;
+    word-wrap: break-word;
+}
+
+.modal .tags-box {
+    position: absolute;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    text-align:justify;
+    font-size: 14px;
+    color: #fff;
+    float:left;
+    word-wrap: break-word;
+
 }
