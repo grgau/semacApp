@@ -154,3 +154,23 @@
     word-wrap: break-word;
 
 }
+
+.footer {
+    margin: 0px
+    background-color: #00A99F;
+    text-align: left;
+}
+.footer .by {
+    padding-top: 7px;
+    padding-left: 5px;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.home {
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/semac.jpg');
+}

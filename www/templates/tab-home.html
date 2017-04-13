@@ -1,7 +1,10 @@
 <ion-view view-title="Semac 2017">
-  <ion-content class="padding" ng-controller="HomeCtrl" ng-init="doRefresh()">
+  <ion-content class="home" ng-controller="HomeCtrl" ng-init="doRefresh()">
     <ion-refresher on-refresh="doRefresh()">
     </ion-refresher>
-    Desenvolvido por Pedro Ferracini
+
   </ion-content>
+  <ion-footer-bar class="footer">
+      <p class = "by">{"dev_by" : "Pedro Ferracini"}</p>
+  </ion-footer-bar>
 </ion-view>
