@@ -1,10 +1,9 @@
-<ion-view view-title="Semac 2017">
+<ion-view view-title="Semac 2017" hide-nav-bar="false" id="comic-view">
   <ion-content class="home" ng-controller="HomeCtrl" ng-init="doRefresh()">
-    <ion-refresher on-refresh="doRefresh()">
-    </ion-refresher>
+
+    <ion-scroll zooming="true" direction="y" scrollbar-x="false" scrollbar-y="false" min-zoom="1" id="scrolly" style="width: 100%; height: 100%;" ng-controller="Modal2Ctrl" ng-click="openModal();">
+        <img id="page" src="./img/home.jpg" >
+    </ion-scroll>
 
   </ion-content>
-  <ion-footer-bar class="footer">
-      <p class = "by">"dev_by":"Pedro Ferracini" <a href='https://www.linkedin.com/in/pedro-ferracini-6b868670/'></a></p>
-  </ion-footer-bar>
 </ion-view>
