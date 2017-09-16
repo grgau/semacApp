@@ -168,8 +168,17 @@
     letter-spacing: 1px;
 }
 
-.home {
-    overflow: hidden;
+.home img {
     background-size: cover;
     background-position: center;
+    width: auto;
+    margin: auto;
+    display: block;
+
+    width: 100%;
+    height: auto;
+}
+
+.home {
+    background-color: #3E01A4;
 }
