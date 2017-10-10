@@ -131,6 +131,7 @@
     border: 5px solid red;
     display: inline-block;
     width: auto;
+    position: absolute;
     flex-flow: row wrap;
     align-items: flex-start;
     text-align:initial;
@@ -149,6 +150,7 @@
     left: 0;
     bottom: 0;
     display: inline-block;
+    position: absolute;
     flex-flow: row wrap;
     align-items: flex-start;
     text-align:initial;
