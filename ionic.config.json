@@ -1,4 +1,7 @@
 {
   "name": "semacApp",
-  "app_id": "8aee1cbf"
+  "app_id": "bbfe739d",
+  "integrations": {},
+  "type": "ionic1",
+  "watchPatterns": []
 }
