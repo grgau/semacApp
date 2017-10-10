@@ -145,7 +145,7 @@
     right: 0;
     left: 0;
     bottom: 0;
-    display: flex;
+    display: inline-block;
     flex-flow: row wrap;
     align-items: flex-start;
     text-align:initial;
@@ -153,7 +153,6 @@
     color: #fff;
     float:left;
     word-wrap: break-word;
-
 }
 
 .footer {
@@ -161,6 +160,7 @@
     background-color: #00A99F;
     text-align: left;
 }
+
 .footer .by {
     padding-top: 7px;
     padding-left: 5px;
