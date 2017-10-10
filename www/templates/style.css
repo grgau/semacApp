@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*
 .item {
     background-color: #00A99F;
     border-radius: 10px;
@@ -59,7 +59,7 @@
     color: #fff;
     font-size: 16px;
 }
-
+*/
 .modal {
     background-color: #193066;
     border-radius: 10px;
@@ -128,6 +128,7 @@
     padding-left: 10px;
     padding-bottom: 5px;
     display: inline-block;
+    width: auto;
     flex-flow: row wrap;
     align-items: flex-start;
     text-align:initial;
@@ -154,7 +155,7 @@
     float:left;
     word-wrap: break-word;
 }
-
+/*
 .footer {
     margin: 0px
     background-color: #00A99F;
@@ -168,7 +169,7 @@
     font-size: 16px;
     letter-spacing: 1px;
 }
-
+*/
 .home img {
     background-size: cover;
     background-position: center;

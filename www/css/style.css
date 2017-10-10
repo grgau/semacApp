@@ -1,8 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 .tabs-positive > .tabs{
-/*background-color: #00A99F !important;*/
-background-color: red !important;
+background-color: #00A99F !important;
 }
 
 .nav-bar-block, .bar {
