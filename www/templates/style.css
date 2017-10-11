@@ -85,7 +85,6 @@
     width: 80px;
     height: 80px;
     margin-top: 8px;
-    display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
     background: #ccc;
@@ -99,7 +98,6 @@
     padding-top: 10px;
     padding-right: 10px;
     padding-left: 15px;
-    display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
     text-align:initial;
@@ -113,7 +111,6 @@
     padding-top: 5px;
     padding-right: 10px;
     padding-left: 15px;
-    display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
     text-align:initial;
@@ -128,9 +125,6 @@
     padding-right: 10px;
     padding-left: 10px;
     padding-bottom: 5px;
-    border: 5px solid red;
-    display: inline-block;
-    width: auto;
     flex-flow: row wrap;
     align-items: flex-start;
     text-align:initial;
@@ -141,17 +135,11 @@
 }
 
 .modal .tags-box {
-    position: absolute;
     padding-bottom: 5px;
     padding-left: 10px;
     padding-right: 10px;
-    /*right: 0;
-    left: 0;
-    bottom: 0;*/
-    align-items: flex-start;
     flex-flow: row wrap;
-    display: inline-block;
-    position: absolute;
+    align-items: flex-start;
     text-align:initial;
     font-size: 14px;
     color: #fff;
