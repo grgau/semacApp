@@ -98,12 +98,10 @@
     padding-top: 10px;
     padding-right: 10px;
     padding-left: 15px;
-    flex-flow: row wrap;
-    align-items: flex-start;
     text-align:initial;
     font-size: 16px;
-    color: #fff;
     float:left;
+    color: #fff;
     word-wrap: break-word;
 }
 
@@ -111,12 +109,18 @@
     padding-top: 5px;
     padding-right: 10px;
     padding-left: 15px;
-    flex-flow: row wrap;
-    align-items: flex-start;
-    text-align:initial;
+    display: inline-block;
     font-size: 14px;
     color: #fff;
-    float:left;
+    word-wrap: break-word;
+}
+
+.modal .tags-box {
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+    color: #fff;
     word-wrap: break-word;
 }
 
@@ -125,42 +129,11 @@
     padding-right: 10px;
     padding-left: 10px;
     padding-bottom: 5px;
-    flex-flow: row wrap;
-    align-items: flex-start;
-    text-align:initial;
     font-size: 16px;
     color: #fff;
-    float:left;
     word-wrap: break-word;
 }
 
-.modal .tags-box {
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    flex-flow: row wrap;
-    align-items: flex-start;
-    text-align:initial;
-    font-size: 14px;
-    color: #fff;
-    float:left;
-    word-wrap: break-word;
-}
-/*
-.footer {
-    margin: 0px
-    background-color: #00A99F;
-    text-align: left;
-}
-
-.footer .by {
-    padding-top: 7px;
-    padding-left: 5px;
-    color: #fff;
-    font-size: 16px;
-    letter-spacing: 1px;
-}
-*/
 .home img {
     background-size: cover;
     background-position: center;
