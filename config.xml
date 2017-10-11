@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.ionicframework.semacapp954692" version="0.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.ionicframework.semacapp954692" version="1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>SEMAC 2017</name>
     <description>
-        An Ionic Framework and Cordova project.
+        Programacao Semana da Computacao UNESP/IBILCE.
     </description>
-    <author email="pedro.henrique.ferracini@gmail.com" href="http://semac.sjrp.unesp.br">
+    <author email="semac.marketing@sjrp.unesp.br" href="http://semac.sjrp.unesp.br">
       Pedro Ferracini
     </author>
     <content src="index.html" />
@@ -78,4 +78,5 @@
         <variable name="UPDATE_API" value="https://api.ionicjs.com" />
         <variable name="MAX_STORE" value="2" />
     </plugin>
+    <engine name="android" spec="~6.1.2" />
 </widget>

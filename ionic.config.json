@@ -1,7 +1,9 @@
 {
   "name": "semacApp",
   "app_id": "bbfe739d",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic1",
   "watchPatterns": []
 }
